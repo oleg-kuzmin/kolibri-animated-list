@@ -1,0 +1,18 @@
+@use '@/shared/mixins' as *;
+
+.content {
+  max-width: 1240px;
+  margin: 0 auto;
+
+  @include media-initial {
+    width: calc(100% - 32px);
+  }
+
+  @include media-laptop {
+    width: calc(100% - 100px);
+  }
+
+  @include media-desktop {
+    width: calc(100% - 200px);
+  }
+}

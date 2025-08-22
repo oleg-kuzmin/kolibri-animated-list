@@ -1,0 +1,71 @@
+@use '@/shared/mixins' as *;
+
+:root {
+  // Colors
+  --color-white: #fff;
+  --color-black: #161c24;
+  --color-blue: #4295e4;
+  --color-grey-0: #fff;
+  --color-grey-50: #f9fafb;
+  --color-grey-100: #f3f4f6;
+  --color-grey-200: #e5e7eb;
+  --color-grey-300: #d1d5db;
+  --color-grey-400: #9ca3af;
+  --color-grey-500: #6b7280;
+  --color-grey-600: #4b5563;
+  --color-grey-700: #374151;
+  --color-grey-800: #1f2937;
+  --color-grey-900: #111827;
+
+  // scrollbar
+  --color-scrollbar: var(--color-blue);
+  --color-track: rgba(255, 255, 255, 0.1);
+
+  // Fonts
+  --font-main: 'Poppins';
+  --font-fallback: 'Helvetica', 'Arial', sans-serif;
+
+  // Time
+  --time-hover-main: 200ms;
+
+  // Smoothing
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 2560px;
+  margin: 0 auto;
+  background-color: var(--color-grey-100);
+  color: var(--color-black);
+  font-family: var(--font-main), var(--font-fallback);
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: var(--color-scrollbar) var(--color-track);
+  scrollbar-width: thin;
+  touch-action: manipulation;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--color-track);
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: var(--color-main);
+}

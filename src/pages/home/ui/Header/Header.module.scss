@@ -1,0 +1,9 @@
+@use '@/shared/mixins' as *;
+
+.header {
+  &__title {
+    color: var(--color-grey-600);
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}

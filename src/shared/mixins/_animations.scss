@@ -1,0 +1,28 @@
+@keyframes new-row {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@mixin animate-new-row {
+  animation: new-row 2s ease-in-out both;
+}
+
+@mixin animate-spinner {
+  animation: spin 1.2s linear infinite backwards;
+}

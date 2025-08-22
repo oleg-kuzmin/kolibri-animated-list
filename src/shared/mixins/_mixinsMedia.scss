@@ -1,0 +1,53 @@
+@mixin media-initial {
+  @media (width >= 0) {
+    @content;
+  }
+}
+
+@mixin media-mobile-S {
+  @media (width >= 320px) {
+    @content;
+  }
+}
+
+@mixin media-mobile-M {
+  @media (width >= 375px) {
+    @content;
+  }
+}
+
+@mixin media-mobile-L {
+  @media (width >= 425px) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (width >= 768px) {
+    @content;
+  }
+}
+
+@mixin media-laptop {
+  @media (width >= 1024px) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+  @media (width >= 1440px) {
+    @content;
+  }
+}
+
+@mixin media-fullHD {
+  @media (width >= 1920px) {
+    @content;
+  }
+}
+
+@mixin media-4K {
+  @media (width >= 2560px) {
+    @content;
+  }
+}

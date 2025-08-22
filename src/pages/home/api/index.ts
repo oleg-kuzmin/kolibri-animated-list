@@ -1,0 +1,1 @@
+export { apiGetUsers } from './apiGetUsers';

@@ -1,0 +1,13 @@
+@use '@/shared/mixins' as *;
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 5px solid currentColor;
+  border-radius: 50%;
+  border-top-color: #56a9f8;
+  border-right-color: #56a9f8;
+  background: none;
+  color: rgba($color: #56a9f8, $alpha: 0.2);
+  @include animate-spinner;
+}
