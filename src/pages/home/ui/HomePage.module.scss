@@ -1,8 +1,6 @@
 @use '@/shared/mixins' as *;
 
 .homePage {
-  @include content;
-
   &__loader {
     position: fixed;
 
