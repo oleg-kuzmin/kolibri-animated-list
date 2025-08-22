@@ -1,9 +1,3 @@
-@mixin media-initial {
-  @media (width >= 0) {
-    @content;
-  }
-}
-
 @mixin media-mobile-S {
   @media (width >= 320px) {
     @content;

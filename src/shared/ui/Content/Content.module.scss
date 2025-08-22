@@ -1,12 +1,9 @@
 @use '@/shared/mixins' as *;
 
 .content {
+  width: calc(100% - 32px);
   max-width: 1240px;
   margin: 0 auto;
-
-  @include media-initial {
-    width: calc(100% - 32px);
-  }
 
   @include media-laptop {
     width: calc(100% - 100px);
