@@ -7,6 +7,8 @@ import { Header } from './Header';
 import { Table } from './Table';
 import styles from './HomePage.module.scss';
 
+const LIMIT_ROWS = 100;
+
 type StatusApi = 'initial' | 'loading' | 'success' | 'error';
 
 interface HomePageProps {
@@ -30,7 +32,7 @@ export function HomePage({ className }: Readonly<HomePageProps>) {
             resolve();
           }, 300);
         });
-        setUsers(prev => [...prev, newUser]);
+        setUsers(prev => (prev.length < LIMIT_ROWS ? [...prev, newUser] : [...prev]));
       }
       setStatusApi('success');
     } catch (error) {
@@ -48,7 +50,7 @@ export function HomePage({ className }: Readonly<HomePageProps>) {
   // Запомнить функцию для повторного использования в эффектах
   const checkLoading = useCallback(() => {
     // Проверить окончание предыдущей загрузки и лимит
-    if (statusApi !== 'loading' && users.length < 100) {
+    if (statusApi !== 'loading' && users.length < LIMIT_ROWS) {
       console.log('Loading next users');
       loadUsers();
     }
