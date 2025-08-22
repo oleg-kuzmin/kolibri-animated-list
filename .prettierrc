@@ -1,0 +1,34 @@
+{
+  "importOrder": [
+    "react",
+    "<TYPES>",
+    "<TYPES>^[.]",
+    "<THIRD_PARTY_MODULES>",
+    "^@/app(/.*)$",
+    "^@/pages(/.*)$",
+    "^@/widgets(/.*)$",
+    "^@/features(/.*)$",
+    "^@/entities(/.*)$",
+    "^@/shared(/.*)$",
+    "^(?!.*[.module.]scss$)[./].*$",
+    ".module.scss$"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true,
+  "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-css-order"],
+  "cssDeclarationSorterOrder": "smacss",
+
+  "arrowParens": "avoid",
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "jsxSingleQuote": false,
+  "printWidth": 120,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requireConfig": false,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "useTabs": false
+}
