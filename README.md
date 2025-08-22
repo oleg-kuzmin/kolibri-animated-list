@@ -20,4 +20,4 @@
 
 ## Ссылки
 
-- [Animated-list](https://oleg-kuzmin.github.io/kolibri-animated-list/)
+- [Github Pages](https://oleg-kuzmin.github.io/kolibri-animated-list/)
