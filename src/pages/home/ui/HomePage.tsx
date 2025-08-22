@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import cn from 'classnames';
-import { Content, Loader } from '@/shared/ui';
+import { Loader } from '@/shared/ui';
 import { apiGetUsers } from '../api';
 import type { User } from '../model';
 import { Header } from './Header';
@@ -80,7 +80,7 @@ export function HomePage({ className }: Readonly<HomePageProps>) {
   }
 
   return (
-    <Content className={cn(styles.homePage, className)}>
+    <div className={cn(styles.homePage, className)}>
       <Header />
 
       <main>
@@ -99,6 +99,6 @@ export function HomePage({ className }: Readonly<HomePageProps>) {
 
         {statusApi === 'loading' && <Loader className={styles.homePage__loader} />}
       </main>
-    </Content>
+    </div>
   );
 }
